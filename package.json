@@ -1,10 +1,10 @@
 {
-  "name": "spelling-server",
+  "name": "spell-check-server",
   "version": "0.0.1",
   "author": "Nathan Romano <nathan.g.romano@gmail.com>",
-  "description": "a simple zero-configuration command-line http server",
+  "description": "a simple service for doing spell checks on words and providing suggestions",
   "scripts": {
-    "start": "node ./bin/http-server",
+    "start": "node server",
     "test": "./node_modules/.bin/mocha test"
   },
   "main": "./app",
