@@ -34,9 +34,13 @@ router.get('/check', function (req, res, next) {
 			});
 		hit[word]++;
 	});
-	async.parallel(check, function (err, results) {
-		console.log('err', err, 'results', results);
-		if (err) res.status(400).json(err);
+	async.parallel(check, function (err, checks) {
+		var results;
+		if (err) return res.status(400).json(err);
+		results = {};
+		checks.forEach(function (check) {
+			results[check.word] =	{correct:check.correct, suggestions:check.suggestions};
+		});
 		res.status(200).json(results);
 	});
 });
