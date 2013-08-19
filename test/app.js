@@ -14,9 +14,9 @@ describe('given a misspelled word', function () {
 				.expect(200)
 				.end(function (err, res) {
 					if (err) return done(err);
-					assert.equal(res.body.correct, false);
-					assert.eqaul(typeof res.body.suggestions, 'object');
-					assert.equal(res.body.suggestions.length >= 1, true);
+					assert.equal(res.body[0].correct, false);
+					assert.equal(typeof res.body[0].suggestions, 'object');
+					assert.equal(res.body[0].suggestions.length >= 1, true);
 					done();
 				});
 
@@ -38,7 +38,7 @@ describe('given a correctly spelled word', function () {
 				.expect(200)
 				.end(function (err, res) {
 					if (err) return done(err);
-					assert.equal(res.body.correct, true);
+					assert.equal(res.body[0].correct, true);
 					done();
 				});
 
