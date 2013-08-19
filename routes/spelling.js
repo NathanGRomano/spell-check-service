@@ -5,7 +5,7 @@
 var express = require('express')
 	, async = require('async')
   , router = new express.Router()
-  , spell = new (require('spellcheck'))(__dirname + '../en_US.aff', __dirname + '../en_US.dic');
+  , spell = new (require('spellcheck'))(__dirname + '/../en_US.aff', __dirname + '/../en_US.dic');
 
 /*
  * Bind the routes to the router
