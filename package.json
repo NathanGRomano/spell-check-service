@@ -19,7 +19,8 @@
     "server"
   ],
   "dependencies" : {
-		"express":"3.3.5"
+		"express":"3.3.5",
+		"spellcheck":"0.0.3"
   },
   "analyze": false,
   "devDependencies": {
