@@ -21,15 +21,18 @@ var express = require('express')
  */
 
 router.get('/check', function (req, res, next) {
-	var words = (req.param('word') || req.param('words') || '').split(','), check = [];
+	var words = (req.param('word') || req.param('words') || '').replace(/[^\w,]/,'').split(','), check = [], hit = {};
+	console.log(words);
 	if (!words.length) return res.status('400').json(new Error('please specify a word or words to have their spelling checked'));
 	words.forEach(function (word) {
-		check.push(function (cb) {
-			spell.check(word, function (err, correct, suggestions) {
-				if (err) return cb(err);
-				cb(null, {correct: correct, suggestions:suggestions});
+		if (word.length && !hit[word])
+			return check.push(function (cb) {
+				spell.check(word, function (err, correct, suggestions) {
+					if (err) return cb(err);
+					cb(null, {word:word, correct: correct, suggestions:suggestions});
+				});
 			});
-		});
+		hit[word]++;
 	});
 	async.parallel(check, function (err, results) {
 		console.log('err', err, 'results', results);
