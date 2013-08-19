@@ -20,6 +20,7 @@
   ],
   "dependencies" : {
 		"express":"3.3.5",
+		"async":"0.2.9",
 		"spellcheck":"0.0.3"
   },
   "analyze": false,
