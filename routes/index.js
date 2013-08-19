@@ -2,4 +2,4 @@
  * include the spelling routes
  */
 
-module.spelling = require('./spelling');
+exports.spelling = require('./spelling');
