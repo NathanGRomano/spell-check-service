@@ -1,11 +1,11 @@
 {
   "name": "spell-check-server",
-  "version": "0.0.1",
+  "version": "0.0.1-1",
   "author": "Nathan Romano <nathan.g.romano@gmail.com>",
   "description": "a simple service for doing spell checks on words and providing suggestions",
   "scripts": {
     "start": "node server",
-    "test": "./node_modules/.bin/mocha test"
+    "test": "./node_modules/.bin/mocha test --ui bdd -R spec"
   },
   "main": "./app",
   "repository": {
