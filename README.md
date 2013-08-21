@@ -19,7 +19,7 @@ This is a simple RESTful service that wraps up a third-party module for spell ch
 
 ## Example
 
-> curl http://nathanromano.me:3000/spelling/check?words=mispelled,tiger,fud
+> curl http://localhost:3000/spelling/check?words=mispelled,tiger,fud
 
 Yields 
 
