@@ -9,8 +9,8 @@ This is a simple RESTful service that wraps up a third-party module for spell ch
 > npm start
 
 ## API
-* GET /spelling/check?word=mispelled
-** Words can be comma seperated too
-* GET /spelling/check?word=mispelled,nife
-** You can also use words instead of word for clarity
-* GET /spelling/check?words=mispelled,nife
+*   GET /spelling/check?word=mispelled
+		Words can be comma seperated too
+* 	GET /spelling/check?word=mispelled,nife
+		You can also use words instead of word for clarity
+*		GET /spelling/check?words=mispelled,nife
