@@ -1,5 +1,5 @@
 {
-  "name": "spell-check-server",
+  "name": "spell-check-service",
   "version": "0.0.1-2",
   "author": "Nathan Romano <nathan.g.romano@gmail.com>",
   "description": "a simple service for doing spell checks on words and providing suggestions",
@@ -10,13 +10,12 @@
   "main": "./app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NathanGRomano/spelling-server.git"
+    "url": "https://github.com/NathanGRomano/spell-check-service.git"
   },
   "keywords": [
     "spell",
 		"check",
-		"suggestions",
-    "server"
+		"suggestions"
   ],
   "dependencies" : {
 		"express":"3.3.5",
