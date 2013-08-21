@@ -16,8 +16,8 @@ var express = require('express')
  *
  * we will route HTTP requets to our model "spell" which was defined above
  *
- * @param word 
- * @param words (optional)
+ * @param (string) word: the word to spell check
+ * @param (string) words: [optional] an alias for word implying we have more than one word 
  */
 
 router.get('/check', function (req, res, next) {

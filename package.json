@@ -1,6 +1,6 @@
 {
   "name": "spell-check-server",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "author": "Nathan Romano <nathan.g.romano@gmail.com>",
   "description": "a simple service for doing spell checks on words and providing suggestions",
   "scripts": {
