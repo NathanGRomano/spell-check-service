@@ -20,7 +20,9 @@ var express = require('express')
  * @param (string) words: [optional] an alias for word implying we have more than one word 
  */
 
-router.get('/check', function (req, res, next) {
+router.get('/check', check);
+
+function check (req, res, next) {
 	var words = (req.param('word') || req.param('words') || '').replace(/[^\w,]/,'').split(','), check = [], hit = {};
 	if (!words.length) return res.status(400).json(new Error('please specify a word or words to have their spelling checked'));
 	words.forEach(function (word) {
@@ -43,6 +45,6 @@ router.get('/check', function (req, res, next) {
 		});
 		res.status(200).json(results);
 	});
-});
+}
 
 module.exports = router;
