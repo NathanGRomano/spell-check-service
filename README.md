@@ -25,42 +25,42 @@ Yields
 
 ```javascript
 
-		{
-			"mispelled": {
-				"correct": false,
-				"suggestions": [
-					"misspelled",
-					"dispelled",
-					"mi spelled",
-					"mi-spelled",
-					"misspell",
-					"spelled",
-					"impelled"
-				]
-			},
-			"tiger": {
-				"correct": true
-			},
-			"fud": {
-				"correct": false,
-				"suggestions": [
-					"FUD",
-					"food",
-					"dud",
-					"feud",
-					"fund",
-					"fed",
-					"fad",
-					"fun",
-					"fur",
-					"fut",
-					"cud",
-					"fug",
-					"fum",
-					"mud",
-					"pud"
-				]
-			}
-		}
+{
+	"mispelled": {
+		"correct": false,
+		"suggestions": [
+			"misspelled",
+			"dispelled",
+			"mi spelled",
+			"mi-spelled",
+			"misspell",
+			"spelled",
+			"impelled"
+		]
+	},
+	"tiger": {
+		"correct": true
+	},
+	"fud": {
+		"correct": false,
+		"suggestions": [
+			"FUD",
+			"food",
+			"dud",
+			"feud",
+			"fund",
+			"fed",
+			"fad",
+			"fun",
+			"fur",
+			"fut",
+			"cud",
+			"fug",
+			"fum",
+			"mud",
+			"pud"
+		]
+	}
+}
 
 ```
