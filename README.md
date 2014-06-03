@@ -3,10 +3,10 @@ Spell Check Service
 This is a simple RESTful service that wraps up a third-party module for spell checks and suggestions.
 
 ## Getting Started
-> npm install
-
+    > npm install
+  
 ## Running the app
-> npm start
+    > npm start
 
 ## API
 *   GET /spelling/check?word=mispelled
@@ -19,10 +19,11 @@ This is a simple RESTful service that wraps up a third-party module for spell ch
 
 ## Example
 
-> curl http://localhost:3000/spelling/check?words=mispelled,tiger,fud
+    > curl http://localhost:3000/spelling/check?words=mispelled,tiger,fud
 
 Yields 
 
+```javascript
 
 		{
 			"mispelled": {
@@ -61,3 +62,5 @@ Yields
 				]
 			}
 		}
+
+```
